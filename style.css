@@ -36,11 +36,16 @@ header, p, nav, img {
     margin: 15px;
 }
 
+img {
+    padding-left: 20px;
+}
+
 a, p {
     font-size: 20px;
 }
 
 h1 {
+    padding-left: 25px;
     color: red;
 }
 
