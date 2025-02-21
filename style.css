@@ -29,19 +29,43 @@ body {
     margin: 3px;
 }
 
-header, p {
+.two-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.two-box p {
+    word-wrap: break-word;
+}
+
+details {
+    display: flex;
+    cursor: pointer;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+details summary {
+    color: red;
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+p {
     margin: 15px;
 }
 
 img {
-    padding-left: 15px;
-    padding-bottom: 15px;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
     padding-right: 25px;
     padding-left: 25px;
     color: red;
+    margin: 10px;
 }
 
 nav {
@@ -58,19 +82,25 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffe4c4;
+    background-color: red;
+    padding: 10%;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 a:hover {
-    background-color: red;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: padding 0.3s;
+    padding: 20%;
+    transition: 0.5s;
+}
+
+summary:focus {
+    font-size: 25px;
+    transition: 1s;
 }
