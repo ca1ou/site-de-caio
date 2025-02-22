@@ -59,6 +59,8 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    padding: 1%;
+    border-radius: 15px;
 }
 
 h1 {
@@ -68,14 +70,7 @@ h1 {
     margin: 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav ul {
-    padding: 5px;
     display: flex;
     flex-direction: row;
 }
@@ -103,4 +98,62 @@ a:hover {
 summary:focus {
     font-size: 25px;
     transition: 1s;
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin-right: 13%;
+        margin-left: 13%;
+    }
+}
+
+@media (max-width: 667px) {
+    #div-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15%;
+    }
+
+    .two-box {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    #div-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+    }
+
+    .two-box {
+        grid-template-columns: 1fr;
+    }
+
+    details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin-right: 6%;
+        margin-left: 6%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        padding: 0;
+    }
+
 }
